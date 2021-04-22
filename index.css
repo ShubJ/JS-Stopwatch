@@ -1,0 +1,59 @@
+.top-heading {
+  color: white;
+  margin: 0;
+  font-size: 7vw;
+}
+
+.timer {
+  color: white;
+  margin: 20;
+  font-size: 7vw;
+}
+
+button {
+  background: crimson;
+  border: black;
+  border-radius: 5px;
+  width: 15vw;
+  height: 5vw;
+  border-style: solid;
+}
+
+.left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#right {
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 75%;
+  height: 100%;
+  width: 25%;
+  overflow-y: auto;
+  border-radius: 15px;
+  border-color: crimson;
+  border-style: hidden solid;
+}
+
+.lap {
+  display: flex;
+  margin: 13px;
+  justify-content: space-between;
+}
+
+.timer-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.start-button {
+  max-width: 40%;
+  flex: 1;
+}

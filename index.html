@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Stopwatch</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="margin: 0;background-color: black;">
+    <div class="wrapper">
+        <div class="left">
+            <p class="top-heading">JS Stopwatch</p>
+            <br><br>
+            <p class="timer"><span id="min">00</span>:<span id="sec">00</span><span
+                    style="color: crimson;">.</span><span style="color: crimson;" id="msec">00</span></p>
+            <div class="timer-buttons">
+                <button class="start-button" id="st-rst">Start</button>
+                <button class="btn" id="lap" style="display: none;">Lap</button>
+                <button class="btn" id="pause" style="display: none;">Pause</button>
+            </div>
+
+        </div>
+        <div id="right" style="display: none;">
+        </div>
+    </div>
+
+</body>
+
+</html>
