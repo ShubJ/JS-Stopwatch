@@ -13,6 +13,7 @@ window.onload = function () {
   var msecTime = document.getElementById("msec");
   var minTime = document.getElementById("min");
   var secTime = document.getElementById("sec");
+  const secondsHand = document.querySelector(".clock .hand.sec");
 
   var rightSection = document.getElementById("right");
 
@@ -90,6 +91,10 @@ window.onload = function () {
   }
 
   function setTime(isReset = false) {
+    secondsHand.style.setProperty(
+      "--rotation",
+      ((secs * 1000 + msecs) / 1000 / 60) * 360
+    );
     if (msecs >= 1000) {
       secs++;
       msecs = 0;

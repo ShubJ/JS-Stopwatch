@@ -54,6 +54,259 @@ button {
 }
 
 .start-button {
-  max-width: 40%;
   flex: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 24vw;
+  height: 24vw;
+  border-radius: 50%;
+  background: black;
+  position: relative;
+  border: 2px solid crimson;
+}
+
+.clock .tick {
+  --rotation: 0;
+  color: crimson;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 12px;
+  transform: rotate(var(--rotation));
+}
+
+.clock .tick1-2 {
+  transform: rotate(6deg);
+}
+.clock .tick1-3 {
+  transform: rotate(12deg);
+}
+.clock .tick1-4 {
+  transform: rotate(18deg);
+}
+.clock .tick1-5 {
+  transform: rotate(24deg);
+}
+.clock .tick1 {
+  transform: rotate(30deg);
+}
+
+.clock .tick2-2 {
+  transform: rotate(36deg);
+}
+.clock .tick2-3 {
+  transform: rotate(42deg);
+}
+.clock .tick2-4 {
+  transform: rotate(48deg);
+}
+.clock .tick2-5 {
+  transform: rotate(54deg);
+}
+.clock .tick2 {
+  transform: rotate(60deg);
+}
+
+.clock .tick3-2 {
+  transform: rotate(66deg);
+}
+.clock .tick3-3 {
+  transform: rotate(72deg);
+}
+.clock .tick3-4 {
+  transform: rotate(78deg);
+}
+.clock .tick3-5 {
+  transform: rotate(84deg);
+}
+.clock .tick3 {
+  transform: rotate(90deg);
+}
+
+.clock .tick4-2 {
+  transform: rotate(96deg);
+}
+.clock .tick4-3 {
+  transform: rotate(102deg);
+}
+.clock .tick4-4 {
+  transform: rotate(108deg);
+}
+.clock .tick4-5 {
+  transform: rotate(114deg);
+}
+.clock .tick4 {
+  transform: rotate(120deg);
+}
+
+.clock .tick5-2 {
+  transform: rotate(126deg);
+}
+.clock .tick5-3 {
+  transform: rotate(132deg);
+}
+.clock .tick5-4 {
+  transform: rotate(138deg);
+}
+.clock .tick5-5 {
+  transform: rotate(144deg);
+}
+.clock .tick5 {
+  transform: rotate(150deg);
+}
+
+.clock .tick6-2 {
+  transform: rotate(156deg);
+}
+.clock .tick6-3 {
+  transform: rotate(162deg);
+}
+.clock .tick6-4 {
+  transform: rotate(168deg);
+}
+.clock .tick6-5 {
+  transform: rotate(174deg);
+}
+.clock .tick6 {
+  transform: rotate(180deg);
+}
+
+.clock .tick7-2 {
+  transform: rotate(186deg);
+}
+.clock .tick7-3 {
+  transform: rotate(192deg);
+}
+.clock .tick7-4 {
+  transform: rotate(198deg);
+}
+.clock .tick7-5 {
+  transform: rotate(204deg);
+}
+.clock .tick7 {
+  transform: rotate(210deg);
+}
+
+.clock .tick8-2 {
+  transform: rotate(216deg);
+}
+.clock .tick8-3 {
+  transform: rotate(222deg);
+}
+.clock .tick8-4 {
+  transform: rotate(228deg);
+}
+.clock .tick8-5 {
+  transform: rotate(234deg);
+}
+.clock .tick8 {
+  transform: rotate(240deg);
+}
+
+.clock .tick9-2 {
+  transform: rotate(246deg);
+}
+.clock .tick9-3 {
+  transform: rotate(252deg);
+}
+.clock .tick9-4 {
+  transform: rotate(258deg);
+}
+.clock .tick9-5 {
+  transform: rotate(264deg);
+}
+.clock .tick9 {
+  transform: rotate(270deg);
+}
+
+.clock .tick10-2 {
+  transform: rotate(276deg);
+}
+.clock .tick10-3 {
+  transform: rotate(282deg);
+}
+.clock .tick10-4 {
+  transform: rotate(288deg);
+}
+.clock .tick10-5 {
+  transform: rotate(294deg);
+}
+.clock .tick10 {
+  transform: rotate(300deg);
+}
+
+.clock .tick11-2 {
+  transform: rotate(306deg);
+}
+.clock .tick11-3 {
+  transform: rotate(312deg);
+}
+.clock .tick11-4 {
+  transform: rotate(318deg);
+}
+.clock .tick11-5 {
+  transform: rotate(324deg);
+}
+.clock .tick11 {
+  transform: rotate(330deg);
+}
+
+.clock .tick12-2 {
+  transform: rotate(336deg);
+}
+.clock .tick12-3 {
+  transform: rotate(342deg);
+}
+.clock .tick12-4 {
+  transform: rotate(348deg);
+}
+.clock .tick12-5 {
+  transform: rotate(354deg);
+}
+
+.clock .hand {
+  --rotation: 0;
+  background-color: black;
+  width: 3%;
+  border: 1px solid transparent;
+  border-top-right-radius: 12px;
+  height: 40%;
+  border-top-left-radius: 12px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  transform-origin: bottom;
+}
+
+.clock .hand.sec {
+  height: 42%;
+  width: 1%;
+  background-color: white;
+}
+
+.clock::after {
+  content: "";
+  height: 5%;
+  width: 5%;
+  background-color: white;
+  bottom: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  z-index: 123;
+  border-radius: 50%;
 }
